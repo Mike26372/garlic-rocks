@@ -51,7 +51,49 @@ export default {
 <style lang="scss">
   @import '../../static/_main';
 
-  .navbar {
+  .navbar, .navbar-menu {
     background-color: $grey-lighter !important;
+  }
+
+  @media (min-width: $tablet) {
+    .navbar-end a {
+      transition: color .2s ease;
+      padding-top: 18px;
+      padding-bottom: 0px !important;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: $grey-lighter !important;
+        color: #778899 !important;
+        &::after,
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    .navbar-end a {
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        width: 0;
+        right: 0;
+        height: 3px;
+      }
+
+      &::before {
+        transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+        background: $grey-darker;
+      }
+
+      &::after {
+        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        background: $grey-darker;
+      }
+
+    }
   }
 </style>
