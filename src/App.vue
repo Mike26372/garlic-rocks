@@ -20,7 +20,8 @@ export default {
 @import '../static/_main';
 
 #app {
-
+  background-color: $grey-lighter;
+  // width: 100vw;
 }
 </style>
 

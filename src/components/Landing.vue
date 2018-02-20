@@ -29,6 +29,6 @@ export default {
 <style lang="scss">
   @import '../../static/_main';
   .subtitle {
-    font-family: $family-secondary;
+    font-family: $family-secondary !important;
   }
 </style>
