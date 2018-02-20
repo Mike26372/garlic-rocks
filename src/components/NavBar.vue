@@ -22,10 +22,10 @@
 
     </div>
     <div class="navbar-end">
-      <span class="navbar-item">How To Use</span>
-      <span class="navbar-item">About Us</span>
-      <span class="navbar-item">Heading C</span>
-      <span class="navbar-item">BUY NOW</span>
+      <a class="navbar-item">How To Use</a>
+      <a class="navbar-item">About Us</a>
+      <a class="navbar-item">Heading C</a>
+      <a class="navbar-item">BUY NOW</a>
     </div>
   </div>
 </nav>

@@ -31,4 +31,17 @@ export default {
   .subtitle {
     font-family: $family-secondary !important;
   }
+
+  @media (max-width: $tablet) {
+    .hero {
+      height: 100vh;
+      max-height: 800px;
+    }
+
+    .hero-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 </style>
