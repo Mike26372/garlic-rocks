@@ -1,25 +1,53 @@
 <template>
-  <div class="hero is-dark is-large">
+
+<div>
+  <section class="hero is-dark is-large">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          {{ header }}
-        </h1>
-        <h2 class="subtitle">
-          {{ subheader }}
+        <div class="logo">
+          <Logo style="fill:white" />
+        </div>
+        <h2 class="subtitle has-text-centered">
+          The natural kitchen <em>essential</em> for garlic lovers
         </h2>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="section" id="how-to">
+    <div class="container">
+      <h2 class="title has-text-centered">How To Use</h2>
+      <Boilerplate />
+    </div>
+  </section>
+  <section class="section section-invert" id="why">
+    <div class="container">
+      <h2 class="title has-text-centered">Why A Rock?</h2>
+      <Boilerplate />
+    </div>
+  </section>
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="title has-text-centered">About Us</h2>
+      <Boilerplate />
+    </div>
+  </section>
+  <footer class="footer">
+    <div>Brought to you by <strong>Terri Tutt Essentials, LLC</strong></div>
+  </footer>
+</div>
+
 </template>
 
 <script>
+import Logo from '@/assets/garlic_rock_logo.svg';
+import Boilerplate from '@/components/Boilerplate';
+
 export default {
   name: 'Landing',
+  components: { Logo, Boilerplate },
   data() {
     return {
-      header: 'GarlicRocks.com',
-      subheader: 'The natural kitchen essential for garlic lovers',
+      Logo,
     };
   },
 };
@@ -27,21 +55,45 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-  @import '../../static/_main';
-  .subtitle {
-    font-family: $family-secondary !important;
-  }
+@import '../../static/_main';
+.subtitle {
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
 
-  @media (max-width: $tablet) {
-    .hero {
-      height: 100vh;
-      max-height: 800px;
-    }
+.hero {
+  background-size: cover;
+  background-image: url('../assets/rocks-background.jpg');
+}
 
-    .hero-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-invert {
+  background-color: $white;
+}
+
+.footer {
+  background-color: $black;
+  color: $white;
+  strong {
+    color: $white;
   }
+}
+
+@media (max-width: $tablet) {
+  .hero {
+    height: 100vh;
+    max-height: 800px;
+  }
+}
 </style>
