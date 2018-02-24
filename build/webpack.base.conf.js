@@ -51,8 +51,27 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
+      // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     { loader: 'svg-sprite-loader', options: { name: '[name].[hash]', prefixize: true } },
+      //     'svgo-loader',
+      //   ]
+      // },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.svg$/,
+        loader: 'vue-svg-loader',
+        options: {
+          svgo: {
+            plugins: [
+              { removeDoctype: true },
+              { removeComments: true }
+            ]
+          }
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
