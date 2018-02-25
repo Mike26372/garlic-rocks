@@ -25,14 +25,14 @@
 
     </div>
     <div class="navbar-end">
-      <a class="navbar-item link" href="#how-to">
-        <span class="underline">How To Use</span>
+      <a class="navbar-item link underline" href="#how-to">
+        <span>How To Use</span>
       </a>
-      <a class="navbar-item link" href="#why">
-        <span class="underline">Why A Rock?</span>
+      <a class="navbar-item link underline" href="#why">
+        <span>Why A Rock?</span>
       </a>
-      <a class="navbar-item link" href="#about">
-        <span class="underline">About Us</span>
+      <a class="navbar-item link underline" href="#about">
+        <span>About Us</span>
       </a>
       <a class="navbar-item link is-hidden-touch">
         <span class="button is-white">BUY NOW</span>
