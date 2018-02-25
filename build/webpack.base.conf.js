@@ -51,13 +51,6 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      // {
-      //   test: /\.svg$/,
-      //   use: [
-      //     { loader: 'svg-sprite-loader', options: { name: '[name].[hash]', prefixize: true } },
-      //     'svgo-loader',
-      //   ]
-      // },
       {
         test: /\.svg$/,
         loader: 'vue-svg-loader',
