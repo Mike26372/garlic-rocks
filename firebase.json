@@ -47,6 +47,11 @@
           }
         ]
       }
-    ]
+    ],
+    "redirects": {
+      "source": "/*",
+      "destination": "/",
+      "type": 302
+    }
   }
 }
