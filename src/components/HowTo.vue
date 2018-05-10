@@ -21,5 +21,6 @@ div, p {
   font-size: 1.8rem;
   font-weight: 300;
   padding: 1.5rem 0;
+  text-align: center;
 }
 </style>
