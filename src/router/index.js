@@ -10,6 +10,7 @@ export default new Router({
       path: '/',
       name: 'Landing',
       component: Landing,
+      alias: ['/how-to', '/why', '/about'],
     },
   ],
 });
