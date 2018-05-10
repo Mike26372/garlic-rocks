@@ -16,11 +16,11 @@ export default {
     position: absolute;
     content: '';
     width: 100px;
-    height: 2px;
+    height: 1px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background: $grey-darker;
-    box-shadow: 0 12px 0 $grey-darker;
+    box-shadow: 0 8px 0 $grey-darker;
   }
 </style>
