@@ -13,22 +13,26 @@
       </div>
     </div>
   </section>
+  <UpArrow />
   <section class="section" id="how-to">
     <div class="container">
       <h2 class="title has-text-centered">How To Use</h2>
-      <Boilerplate />
+      <TwoLines />
+      <HowTo />
     </div>
   </section>
   <section class="section section-invert" id="why">
     <div class="container">
       <h2 class="title has-text-centered">Why A Rock?</h2>
-      <Boilerplate />
+      <TwoLines />
+      <Why />
     </div>
   </section>
   <section class="section" id="about">
     <div class="container">
       <h2 class="title has-text-centered">About Us</h2>
-      <Boilerplate />
+      <TwoLines />
+      <About />
     </div>
   </section>
   <footer class="footer">
@@ -40,11 +44,15 @@
 
 <script>
 import Logo from '@/assets/garlic_rock_logo.svg';
-import Boilerplate from '@/components/Boilerplate';
+import Why from '@/components/Why';
+import HowTo from '@/components/HowTo';
+import About from '@/components/About';
+import UpArrow from '@/components/UpArrow';
+import TwoLines from '@/components/TwoLines';
 
 export default {
   name: 'Landing',
-  components: { Logo, Boilerplate },
+  components: { Logo, Why, HowTo, About, UpArrow, TwoLines },
   data() {
     return {
       Logo,
@@ -56,6 +64,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 @import '../../static/_main';
+h2 {
+  margin-bottom: 1.5rem !important;
+}
+
 .subtitle {
   font-weight: 600;
   margin: 0 auto;
