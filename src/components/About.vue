@@ -6,7 +6,7 @@
     that loves cooking with fresh, wholesome ingredients.
     Garlic is one of our favorite ingredients
     and for over 15 years we have been using a rock to
-    remove crush garlic and easily remove the papery skin.
+    crush garlic and easily remove the papery skin.
     So we decided to share our favorite kitchen tool with you!
     Here is our family, the Garlic Rock team!
   </p>
