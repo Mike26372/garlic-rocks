@@ -21,6 +21,7 @@
       <HowTo />
     </div>
   </section>
+  <ArrowsDown color="#FFF" />
   <section class="section section-invert" id="why">
     <div class="container">
       <h2 class="title has-text-centered">Why A Rock?</h2>
@@ -28,6 +29,7 @@
       <Why />
     </div>
   </section>
+  <ArrowsDown color="hsl(0, 0%, 86%)"/>
   <section class="section" id="about">
     <div class="container">
       <h2 class="title has-text-centered">About Us</h2>
@@ -35,6 +37,7 @@
       <About />
     </div>
   </section>
+  <TopCurve />
   <footer class="footer">
     <div>Brought to you by <strong>Terri Tutt Essentials, LLC</strong></div>
   </footer>
@@ -49,10 +52,12 @@ import HowTo from '@/components/HowTo';
 import About from '@/components/About';
 import UpArrow from '@/components/UpArrow';
 import TwoLines from '@/components/TwoLines';
+import ArrowsDown from '@/components/ArrowsDown';
+import TopCurve from '@/components/TopCurve';
 
 export default {
   name: 'Landing',
-  components: { Logo, Why, HowTo, About, UpArrow, TwoLines },
+  components: { Logo, Why, HowTo, About, UpArrow, TwoLines, ArrowsDown, TopCurve },
   data() {
     return {
       Logo,
