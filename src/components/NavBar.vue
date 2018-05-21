@@ -8,7 +8,7 @@
       garlicrocks.com
     </span>
     <span class="navbar-item is-hidden-desktop link">
-      <span class="button is-white">BUY NOW</span>
+      <span class="button is-white" v-on:click="toggleModal()">BUY NOW</span>
     </span>
     <div
       class="navbar-burger"
@@ -35,30 +35,45 @@
         <span>About Us</span>
       </a>
       <a class="navbar-item link is-hidden-touch">
-        <span class="button is-white">BUY NOW</span>
+        <span class="button is-white" v-on:click="toggleModal()">BUY NOW</span>
       </a>
     </div>
   </div>
+  <div class="modal-container" :style="{display: isModalShown ? 'block' : 'none'}">
+    <div class="modal-contents">
+      <div class="modal-inner-container">
+        <div class="delete-button" v-on:click="toggleModal()">
+          <i class="fas fa-times"></i>
+        </div>
+        <Shopify />
+      </div>
+    </div>
+  </div>
 </nav>
+
 </template>
 
 <script>
 import LogoSmall from '@/assets/garlic_rock_logo_small.svg';
+import Shopify from '@/components/Shopify';
 
 export default {
   name: 'NavBar',
   template: '<NavBar />',
   components: {
     LogoSmall,
+    Shopify,
   },
   data() {
-    return { isActive: false };
+    return { isActive: false, isModalShown: false };
   },
   methods: {
     toggleActive: function toggleActive() {
       // eslint-disable-next-line
-      console.log('TOGGLED');
       this.isActive = !this.isActive;
+    },
+    toggleModal: function toggleModal() {
+      this.isModalShown = !this.isModalShown;
     },
   },
 };
@@ -94,6 +109,48 @@ export default {
       border: 1px solid white !important;
       font-weight: 600;
     }
+  }
+
+  .modal-inner-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(12px, -16px);
+    color: #363636;
+    cursor: pointer;
+  }
+
+  .modal-container {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-contents {
+    background-color: white;
+    border-radius: 3px;
+    margin: 20% auto;
+    max-width: 600px;
+    padding: 1.5em;
+    border: 1px solid #363636;
+    width: 60%;
+  }
+
+  @media (max-width: $tablet) {
+    // .modal-container {
+    //   padding: 0.75rem;
+    // }
   }
 
   @media (min-width: $tablet) {

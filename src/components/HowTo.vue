@@ -32,6 +32,7 @@ import One from '@/assets/one.svg';
 import Two from '@/assets/two.svg';
 import Three from '@/assets/three.svg';
 import Four from '@/assets/four.svg';
+
 export default {
   name: 'howto',
   components: { One, Two, Three, Four },
