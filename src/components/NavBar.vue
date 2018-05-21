@@ -128,6 +128,7 @@ export default {
   .modal-container {
     display: block;
     position: fixed;
+    padding: 0 1em;
     z-index: 1;
     left: 0;
     top: 0;
@@ -148,9 +149,10 @@ export default {
   }
 
   @media (max-width: $tablet) {
-    // .modal-container {
-    //   padding: 0.75rem;
-    // }
+    .modal-contents {
+      margin: 20% auto;
+      width: 100%;
+    }
   }
 
   @media (min-width: $tablet) {
