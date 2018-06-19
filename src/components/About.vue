@@ -8,16 +8,15 @@
     and for over 15 years we have been using a rock to
     crush garlic and easily remove the papery skin.
     So we decided to share our favorite kitchen tool with you!
-    Here is our family, the Garlic Rock team!
   </p>
 
-  <p>
+  <!-- <p>
     Terri: Our business coordinator
     Kim: Our rock engraver
     Natalie: Garlic Rock’s spokesperson in demonstration video
     Kevin: Our finance guy
     Michael: Website designer
-  </p>
+  </p> -->
 </div>
 </template>
 

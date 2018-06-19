@@ -7,7 +7,6 @@
     that are difficult to clean.
   </p>
   <div>
-    [Add Icons Here]
   </div>
 </div>
 </template>

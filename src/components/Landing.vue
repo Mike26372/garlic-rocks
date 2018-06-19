@@ -81,7 +81,7 @@ h2 {
 
 .hero {
   background-size: cover;
-  background-image: url('../assets/rocks-background.jpg');
+  background-image: url('../assets/landing_page.jpg');
 }
 
 .hero-body {
