@@ -81,7 +81,7 @@ h2 {
 
 .hero {
   background-size: cover;
-  background-image: url('../assets/landing_page.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/garlic-rock.appspot.com/o/BackgroundPhoto_v3.jpg?alt=media&token=3755cdf8-9e5a-4ce6-abc8-67d7cc5e1b4c');
 }
 
 .hero-body {
