@@ -82,6 +82,10 @@ export default {
 <style lang="scss">
   @import '../../static/_main';
 
+  iframe {
+    min-height: 300px !important;
+  }
+
   .navbar, .navbar-menu, .navbar-item {
     // background-color: $grey-darker !important;
     background-color: $black !important;
@@ -152,6 +156,10 @@ export default {
     .modal-contents {
       margin: 20% auto;
       width: 100%;
+    }
+
+    iframe {
+      min-height: 650px !important;
     }
   }
 
