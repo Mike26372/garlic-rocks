@@ -1,14 +1,17 @@
-/* eslint-disable */
 <template>
 <div>
-  <p>
+  <div>
     We are a family from the Central Valley of Northern California
-    that loves cooking with fresh, wholesome ingredients.
+    that loves cooking with fresh, wholesome ingredients
+  </div>
+  <div>
     Garlic is one of our favorite ingredients
     and for over 15 years we have been using a rock to
-    crush garlic and easily remove the papery skin.
+    crush garlic and easily remove the papery skin
+  </div>
+  <div class="secondary-font">
     So we decided to share our favorite kitchen tool with you!
-  </p>
+  </div>
 
   <!-- <p>
     Terri: Our business coordinator
@@ -34,5 +37,11 @@ div, p {
   font-size: 1.8rem;
   font-weight: 300;
   padding: 1.5rem 0;
+  text-align: center;
+}
+
+.secondary-font {
+  font-family: $family-primary !important;
+  font-style: italic;
 }
 </style>

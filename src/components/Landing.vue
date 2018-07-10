@@ -37,7 +37,6 @@
       <About />
     </div>
   </section>
-  <TopCurve />
   <footer class="footer">
     <div>Brought to you by <strong>Terri Tutt Essentials, LLC</strong></div>
   </footer>
@@ -81,7 +80,7 @@ h2 {
 
 .hero {
   background-size: cover;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/garlic-rock.appspot.com/o/BackgroundPhoto_v3.jpg?alt=media&token=3755cdf8-9e5a-4ce6-abc8-67d7cc5e1b4c');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/garlic-rock.appspot.com/o/BackgroundPhoto_v6.jpg?alt=media&token=64c69fd9-52b6-4925-a81e-6b2d26dd941c');
 }
 
 .hero-body {
@@ -111,6 +110,10 @@ h2 {
   .hero {
     height: 100vh;
     max-height: 800px;
+  }
+
+  .footer {
+    text-align: center;
   }
 }
 </style>
