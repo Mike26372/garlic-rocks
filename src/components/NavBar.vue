@@ -82,10 +82,6 @@ export default {
 <style lang="scss">
   @import '../../static/_main';
 
-  iframe {
-    min-height: 300px !important;
-  }
-
   .navbar, .navbar-menu, .navbar-item {
     // background-color: $grey-darker !important;
     background-color: $black !important;
@@ -150,17 +146,22 @@ export default {
     padding: 1.5em;
     border: 1px solid #363636;
     width: 60%;
+
+    iframe {
+      min-height: 350px !important;
+    }
   }
 
   @media (max-width: $tablet) {
     .modal-contents {
       margin: 20% auto;
       width: 100%;
+
+      iframe {
+        min-height: 850px !important;
+      }
     }
 
-    iframe {
-      min-height: 650px !important;
-    }
   }
 
   @media (min-width: $tablet) {
