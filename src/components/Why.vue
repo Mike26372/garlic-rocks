@@ -8,7 +8,14 @@
     No sharp edges to cut yourself on | No nooks and crannies
     that are difficult to clean
   </div>
-  <div>
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/TpdlJVNZRxI"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
   </div>
 </div>
 </template>
@@ -20,9 +27,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../static/_main';
+@import "../../static/_main";
 
-div, p {
+div,
+p {
   font-family: $family-secondary !important;
   font-size: 1.8rem;
   font-weight: 300;
@@ -33,5 +41,20 @@ div, p {
 .secondary-font {
   font-family: $family-primary !important;
   font-style: italic;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  width: 100%;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
